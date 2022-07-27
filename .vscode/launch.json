@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "args": [],
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "seg export",
+            "type": "python",
+            "args": ["//192.168.10.186/test/tmp", "//192.168.10.186/test/seg", "--labels", "//192.168.10.186/test/labels.txt", "--noviz"],
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "ryolo export",
+            "type": "python",
+            "args": ["tools/test", "-m", "-w", "tools/rotate_last.onnx", "-c", "tools/classes.txt"],
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "predict",
+            "type": "python",
+            "args": ["yolov5", "-r", "C:/Users/A5324/Desktop/123", "--shape", "640", "640"],
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
